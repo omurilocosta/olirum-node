@@ -1,0 +1,8 @@
+label , h1 {
+    font-weight: bold;
+}
+
+button {
+    background-color: var(--color-pri) !important;
+    color: white !important;
+}
