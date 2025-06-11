@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Criar anúncio - OS</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/form.css">
+    <link rel="stylesheet" href="../css/vars.css">
+  </head>
+  <body>
+    <main class="bg-light">
+      <section class="container d-flex flex-column justify-content-center align-items-center min-vh-100">
+        <h1>Adicione seu Tênis</h1>
+
+        <form id="contactForm" class="bg-white p-4 border shadow rounded text-start w-75">
+          <div class="mb-3">
+            <label for="name" class="form-label">Nome do tênis</label>
+            <input type="text" id="name" class="form-control" required />
+          </div>
+          <div class="mb-3">
+            <label for="preco" class="form-label" >Preço</label>
+            <input type="text" id="preco" class="form-control" required />
+          </div>
+          <div class="mb-3">
+            <label for="imagem" class="form-label">Adicione o link da sua imagem</label>
+            <textarea id="imagem" class="form-control" rows="4" required></textarea>
+          </div>
+          <div class="d-flex justify-content-center">
+            <button type="submit" id="submitButton" class="btn w-50">Enviar</button>
+          </div>
+        </form>
+      </section>
+    </main>
+
+    <!-- Modal -->
+    <div class="modal fade" id="feedbackModal" tabindex="-1" aria-labelledby="modalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="modalLabel">Atenção</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body" id="modalMessage"><!-- Mensagem será inserida dinamicamente --></div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script defer src="../js/addProduct-config.js"></script>
+  </body>
+</html>
