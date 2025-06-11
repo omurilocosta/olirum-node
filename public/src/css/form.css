@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 label , h1 {
     font-weight: bold;
 }
@@ -5,4 +6,13 @@ label , h1 {
 button {
     background-color: var(--color-pri) !important;
     color: white !important;
+=======
+label , h1 {
+    font-weight: bold;
+}
+
+button {
+    background-color: var(--color-pri) !important;
+    color: white !important;
+>>>>>>> daf3a99b732d26f6337c645708530b0aa54c83c6
 }
